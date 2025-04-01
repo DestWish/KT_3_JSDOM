@@ -1,0 +1,59 @@
+
+
+.catalog {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.catalog h1 {
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+}
+
+.menu-item {
+    background: #d100ff;
+    color: white;
+    padding: 8px 12px;
+    margin: 2px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    border-radius: 32px;
+}
+
+
+.toggle-btn {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 14px;
+    color: white;
+}
+
+.item-text {
+    flex-grow: 1;
+}
+
+.menu li.active > ul {
+    display: block;
+}
+
+.menu li.active > .menu-item .toggle-btn {
+    content: "■";
+}
+
+/* Эффект при наведении */
+.menu-item:hover {
+    background: #4c008b;
+}
